@@ -3,12 +3,9 @@
 \begin{itemize}
 
 
-	\item Por esto, se pudo demostrar la eficiencia de la herramienta de ORM, Entity Framework, en que la construcción de la API tuvo éxito.
-	\item Luego de la generación, en la puesta a prueba con Postman, insertamos cadenas de JSON para cada tabla, respetando el formato especificado por la API y observamos que la inserción era satisfactoria. Entonces la API y sus tablas, generadas por Entity Framework, está respondiendo correctamente y cumple con las características que especificamos al principio, esto son las clases y sus atributos en código.
-	\item Las herramientas de ORM, como lo es el Entity Framework, nos generan toda la lógica y los controladores de la API mientras que sólo necesitamos elaborar las clases con sus atributos. Es la herramienta de Entity Framework la que agiliza el desarrollo de la API.
-	\item Las API son valiosas, ya que  permiten hacer uso de funciones ya existentes en otro software sin la necesidad de construirla en la nuestra, reutilizando así código que se sabe que está probado y que funciona correctamente.
-	\item Util para dar la posibilidad de inviar de forma remota informacion como por ejemplo de una DB a otra.
-	\item El consumir apis de otros sistemas puede ser tendencioso ya que por un lado agiliza el desarrollo, pero a su vez la organizacion dueña del api tendra que afrontar la necesidad de potenciar sus recursos en caso que el api sea muy frecuentada.
-
+	\item Se cumplieron los pasos para atachar la base de datos y de abrir el proyecto con el contexto. Se asume que estamos en un proceso luego de haber generado la base de datos a base de First Code, por lo tanto es que contamos con estos dos recursos para a continuación hacer las pruebas.
+	\item Para efectuar las distintas pruebas, nos es necesario contar con datos en el contexto del proyecto, de lo contrario no podríamos hacer las pruebas y nos arrojaría error. Además de tener problemas de inserción con la clase de Students. Fue así que se optó por desarrollar las pruebas con la clase Grades.
+	\item Ejecutamos las pruebas y tenemos un Profiler conectado que está pendiente de todas las sentencias SQL que se ejecutan por detrás. Este nos permitió tener visión de lo que ocurre entre el proyecto y la base de datos, por esto es que consideramos a este elemento como parte del proceso de pruebas en una base de datos.
+	\item En todo el proceso de pruebas, pudimos observar lo útil de un proyecto de pruebas unitarias, y estamos de acuerdo en que, junto con la depuración, nos dan detalles y una resolución acerca de cómo está funcionando nuestro proyecto y contexto. Como también es garantía para verificar que exista una relación entre la base de datos física y nuestro contexto.
 
 \end{itemize}
